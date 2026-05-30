@@ -1,6 +1,0 @@
-{
-  "name": "Bling ERP Integration",
-  "description": "Uma aplicação web moderna e elegante para gerenciamento de produtos e estoque usando a API v3 do ERP Bling.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
