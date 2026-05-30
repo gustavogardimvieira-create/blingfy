@@ -2,13 +2,15 @@ import express from 'express';
 import path from 'path';
 import { createServer as createViteServer } from 'vite';
 import dotenv from 'dotenv';
-import apiRouter from './server/routes/api.routes';
-import { rateLimiter } from './server/middleware/rate-limit.middleware';
+import apiRouter from './backend/routes/api.routes';
+import { rateLimiter } from './backend/middleware/rate-limit.middleware';
 
 dotenv.config();
 
 const app = express();
 const PORT = 3000;
+
+app.set('trust proxy', 1);
 
 app.use(express.json());
 
